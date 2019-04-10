@@ -14,7 +14,8 @@
 
 <body>
     <header>
-    <h1 id="my-name">Tom Christ</h1>
+    <div class="header-bar">
+    <a href="index.html" id="my-name">Tom Christ</a>
     <nav>
         <p>
         <a href="index.html">About</a> |
@@ -22,15 +23,24 @@
         <a href="contact.html">Contact</a>
         </p>
     </nav>
+    </div>
     </header>
             
     <section>
         <h1>Contact</h1>
-        <p>Section content</p>
+        <hr>
+        <form action="#">
+            <p>Name</p><br>
+            <input type="text" name="full-name"><br>
+            <p>Email</p><br>
+            <input type="email" name="email-address"><br>
+            <p>Message</p><br>
+            <textarea name="message" rows="15"></textarea>
+        </form>
     </section> 
     
     <footer>
-        <p>Footer content</p>
+        <p>Copyright (c)</p>
     </footer>
 
 </body>

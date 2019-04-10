@@ -15,31 +15,36 @@ header {
     border-bottom: 8px solid #cccccc;
 }
 
-/*display: inline-block;*/
-/*line-height*/
-
-nav {
-    height: 100%;
-    width: 500px;
-    float: right;
-    /* display: inline-block; */
-    margin: 0, 400px, 10px, 0;
-    padding: 15px;
+.header-bar {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-h1 {
+h1,h2 {
     font-size: 26px;
     color: #4aaaa5;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     margin-left: auto;
+    font-weight: bold;
+}
+
+nav {
+    height: 100%;
+    float: right;
+    margin: 0, 20px, 10px, 10px;
+    padding: 20px;
 }
 
 #my-name {
-    /* float: right; */
-    display: inline-block;
+    float: left;
     background-color: #4aaaa5;
     padding: 12px;
     color: #ffffff;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 section {
@@ -60,10 +65,51 @@ section {
     width: 25%;
 }
 
+.spaced {
+    line-height: 1.5;
+}
+
+/* Portfolio Classes */
+
+.portfolio {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+}
+
+.portfolio-pic {
+    width: 100%;
+    z-index: 1;
+}
+
+.portfolio-name {
+    width: 100%;
+    line-height: 2;
+    position: absolute;
+    left: 0;
+    top: 60%;
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    z-index: 2;
+}
+
 footer {
     height: 48px;
     background-color: #666666;
     border-top: 8px solid #4aaaa5;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
 }
 
 a, a:visited {
