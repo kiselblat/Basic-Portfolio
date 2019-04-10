@@ -12,6 +12,7 @@ header {
     padding: 0;
     text-align: center;
     height: 50px;
+    border-bottom: 8px solid #cccccc;
 }
 
 /*display: inline-block;*/
@@ -19,21 +20,22 @@ header {
 
 nav {
     height: 100%;
-    width: 50%;
+    width: 500px;
     float: right;
-    display: inline-block;
-    margin: 0, 0, 10px, 0;
-    padding: 0;
+    /* display: inline-block; */
+    margin: 0, 400px, 10px, 0;
+    padding: 15px;
 }
 
 h1 {
     font-size: 26px;
     color: #4aaaa5;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
+    margin-left: auto;
 }
 
 #my-name {
-    float: left;
+    /* float: right; */
     display: inline-block;
     background-color: #4aaaa5;
     padding: 12px;
@@ -41,13 +43,33 @@ h1 {
 }
 
 section {
-    background-color: #eeeeee;
+    background-color: #ffffff;
     width: 900px;
+    /* using viewport units I don't quite get yet */
+    min-height: calc(80vh - 70px);
     padding: 30px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#profile-pic {
+    float: left;
+    margin: 10px;
+    width: 25%;
 }
 
 footer {
+    height: 48px;
     background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+}
+
+a, a:visited {
+    color: #777777;
+}
+
+a:hover {
+    color: #4aaaa5;
 }
